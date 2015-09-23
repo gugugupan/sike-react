@@ -424,6 +424,77 @@ td,
 th {
   padding: 0;
 }
+/* css/index.css */
+
+/* Make the section part full with container */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+
+  background-color: rgba(255,0,0,0.3);
+  border-bottom: 2px solid rgba(255,255,255,.5);
+  width: 100%;
+  height: 100%;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  background-color: inherit;
+  flex-direction: column;
+}
+
+.navbar {
+  flex-direction: row;
+  align-items: center;
+  justyfy-content: center;
+}
+
+.navbar a {
+  padding: 0 20px;
+  color: #FFFFFF;
+}
+
+.iphone-demo {
+  align-self: stretch;
+  flex-grow: 0.5;
+  flex-basis: 0;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone-image {
+  width: 300px;
+  height: 632px;
+  position: relative;
+}
+
+.iphone-image .screen-image {
+  position: absolute;
+  top: 92px;
+  left: 24px;
+}
+
+.feature-description {
+  border-left: 2px solid rgba(255,255,255,.5);
+  align-self: stretch;
+  flex-grow: 0.5;
+  flex-basis: 0;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-description p {
+  width: 500px;
+}
 
 body, div, span {
   box-sizing: border-box;
@@ -451,8 +522,38 @@ body, div, span {
   -webkit-align-content: flex-start;
       -ms-flex-line-pack: start;
           align-content: flex-start;
+}
 
-  border: 0 solid black;
-  margin: 0;
-  padding: 0;
+body {
+  background-color: #1F1E34;
+  color: #FFF;
+  font-family: "Avenir Next",
+      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+      Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  font-weight: 400;
+  color: #FFF;
+}
+
+a:hover {
+  font-weight: 400;
+  color: #DADADA;
+  text-decoration: none;
 }

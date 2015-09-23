@@ -1,0 +1,71 @@
+/* css/index.css */
+
+/* Make the section part full with container */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+
+  background-color: rgba(255,0,0,0.3);
+  border-bottom: 2px solid rgba(255,255,255,.5);
+  width: 100%;
+  height: 100%;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  background-color: inherit;
+  flex-direction: column;
+}
+
+.navbar {
+  flex-direction: row;
+  align-items: center;
+  justyfy-content: center;
+}
+
+.navbar a {
+  padding: 0 20px;
+  color: #FFFFFF;
+}
+
+.iphone-demo {
+  align-self: stretch;
+  flex-grow: 0.5;
+  flex-basis: 0;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone-image {
+  width: 300px;
+  height: 632px;
+  position: relative;
+}
+
+.iphone-image .screen-image {
+  position: absolute;
+  top: 92px;
+  left: 24px;
+}
+
+.feature-description {
+  border-left: 2px solid rgba(255,255,255,.5);
+  align-self: stretch;
+  flex-grow: 0.5;
+  flex-basis: 0;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-description p {
+  width: 500px;
+}
