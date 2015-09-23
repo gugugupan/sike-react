@@ -20,48 +20,58 @@
 
 </head>
 <body>
+	<!-- Slider Control -->
+	<div id="slider-control">
+		<a href="#native" class="active"><div class="dot"></div></a>
+		<a href="#touch"><div class="dot"></div></a>
+		<a href="#async"><div class="dot"></div></a>
+		<a href="#flex"><div class="dot"></div></a>
+	</div>
 
-		<div class="title section">
-			<img class="react-logo" src="img/react-logo.svg"/>
-			<h1>Build Native Apps With React</h1>
-			<div class="navbar">
-				<a href="#native">Native iOS</a>
-				<a href="#touch">Touch Handling</a>
-				<a href="#async">Asynchronous</a>
-				<a href="#flex">Flex &amp; Styling</a>
+	<!--  Main Body -->
+	<div class="title section">
+		<img class="react-logo" src="img/react-logo.svg"/>
+		<div class="overlay"></div>
+		<h1 style="z-index:0;">Build Native Apps With React</h1>
+		<div class="navbar">
+			<a href="#native">Native iOS</a>
+			<a href="#touch">Touch Handling</a>
+			<a href="#async">Asynchronous</a>
+			<a href="#flex">Flex &amp; Styling</a>
+		</div>
+	</div>
+	<div class="section">
+		<div class="iphone-demo">
+			<div class="iphone-image">
+				<img src="img/iphone-frame.svg"/>
+				<img class="screen-image" src="img/tumblr-demo.jpg"/>
 			</div>
 		</div>
-		<div class="section">
-			<div class="iphone-demo">
-				<div class="iphone-image">
-					<img src="img/iphone-frame.svg"/>
-					<img class="screen-image" src="img/tumblr-demo.jpg"/>
-				</div>
-			</div>
-			<div class="feature-description">
-				<h2>Native Experience</h2>
-				<p>
-				  Takes advantage of native iOS components to give your app a consistent look and feel with the rest of the platform ecosystem, and keeps the quality bar high.
-				</p>
+		<div class="feature-description">
+			<h2>Native Experience</h2>
+			<p>
+			  Takes advantage of native iOS components to give your app a consistent look and feel with the rest of the platform ecosystem, and keeps the quality bar high.
+			</p>
+		</div>
+	</div>
+	<div class="section">
+		<div class="iphone-demo">
+			<div class="iphone-image">
+				<img src="img/iphone-frame.svg"/>
+				<img class="screen-image" src="img/swype-demo.jpg"/>
 			</div>
 		</div>
-		<div class="section">
-			<div class="iphone-demo">
-				<div class="iphone-image">
-					<img src="img/iphone-frame.svg"/>
-					<img class="screen-image" src="img/swype-demo.jpg"/>
-				</div>
-			</div>
-			<div class="feature-description">
-				<h2>Touches & Gestures</h2>
-				<p>
-				  React Native implements a powerful responder system to negotiate touches in comples view hierarchies. It allows you to build complex UI, and handle user interactions precisely.
-				</p>
-			</div>
+		<div class="feature-description">
+			<h2>Touches & Gestures</h2>
+			<p>
+			  React Native implements a powerful responder system to negotiate touches in comples view hierarchies. It allows you to build complex UI, and handle user interactions precisely.
+			</p>
 		</div>
-		<div class="section">
-			<h1>Android Is Supported!</h1>
-		</div>
+	</div>
+	<div class="section">
+		<h1>Android Is Supported!</h1>
+		<img id="android-robot" src="img/android-robot.svg"/>
+	</div>
 
 <!-- <script src="js/app.js"></script> -->
 

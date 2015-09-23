@@ -6,22 +6,63 @@ html, body {
   height: 100%;
 }
 
+/* Slider Control Section */
+#slider-control {
+  padding: 3px;
+
+  position: fixed;
+  z-index: 255;
+
+  right: 10px;
+  top: 50%;
+  margin-top: -47px;
+}
+
+#slider-control a {
+  padding: 3px;
+}
+
+#slider-control .dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+#slider-control .active .dot {
+  background-color: #fff;
+}
+
+/* Main Body Section */
 .section {
   display: flex;
 
-  background-color: rgba(255,0,0,0.3);
-  border-bottom: 2px solid rgba(255,255,255,.5);
+  /*background-color: rgba(255,0,0,0.3);*/
+  /*border-bottom: 2px solid rgba(255,255,255,.5);*/
   width: 100%;
   height: 100%;
 
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  overflow: hidden;
 }
 
 .title {
   background-color: inherit;
   flex-direction: column;
+
+  background-image: url(../img/background.jpg);
+}
+
+.title .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
 }
 
 .navbar {
@@ -46,18 +87,18 @@ html, body {
 
 .iphone-image {
   width: 300px;
-  height: 632px;
+  height: 630px;
   position: relative;
 }
 
 .iphone-image .screen-image {
   position: absolute;
-  top: 92px;
-  left: 24px;
+  top: 90px;
+  left: 25px;
 }
 
 .feature-description {
-  border-left: 2px solid rgba(255,255,255,.5);
+  /*border-left: 2px solid rgba(255,255,255,.5);*/
   align-self: stretch;
   flex-grow: 0.5;
   flex-basis: 0;
@@ -68,4 +109,11 @@ html, body {
 
 .feature-description p {
   width: 500px;
+}
+
+.section #android-robot {
+  position: absolute;
+  bottom: -120px;
+  right: -100px;
+  transform: rotate(-45deg);
 }
