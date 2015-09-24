@@ -65,6 +65,17 @@ html, body {
   background-image: linear-gradient(rgba(0,0,0,0),rgba(31,30,52,1));
 }
 
+.title .react-logo {
+  display: flex;
+}
+
+.title .react-logo #logo {
+  /*  FIX: Change to GPU mode */
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+}
+
 .navbar {
   flex-direction: row;
   align-items: center;

@@ -18,19 +18,25 @@
 
 	<link rel="stylesheet" href="bundle/app.css">
 
+	<!-- Import Javascript Library -->
+	<script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+	<script type="text/javascript" src="node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+
 </head>
 <body>
 	<!-- Slider Control -->
 	<div id="slider-control">
-		<a href="#native" class="active"><div class="dot"></div></a>
+		<a href="#intro-section" class="active"><div class="dot"></div></a>
+		<a href="#native"><div class="dot"></div></a>
 		<a href="#touch"><div class="dot"></div></a>
-		<a href="#async"><div class="dot"></div></a>
-		<a href="#flex"><div class="dot"></div></a>
+		<a href="#android"><div class="dot"></div></a>
 	</div>
 
 	<!--  Main Body -->
-	<div class="title section">
-		<img class="react-logo" src="img/react-logo.svg"/>
+	<div id="intro-section" class="title section">
+		<div class="react-logo">
+			<img id="logo" src="img/react-logo.svg"/>
+		</div>
 		<div class="overlay"></div>
 		<h1 style="z-index:0;">Build Native Apps With React</h1>
 		<div class="navbar">
@@ -40,7 +46,7 @@
 			<a href="#flex">Flex &amp; Styling</a>
 		</div>
 	</div>
-	<div class="section">
+	<div id="native" class="section">
 		<div class="iphone-demo">
 			<div class="iphone-image">
 				<img src="img/iphone-frame.svg"/>
@@ -54,7 +60,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="section">
+	<div id="touch" class="section">
 		<div class="iphone-demo">
 			<div class="iphone-image">
 				<img src="img/iphone-frame.svg"/>
@@ -68,12 +74,12 @@
 			</p>
 		</div>
 	</div>
-	<div class="section">
+	<div id="android" class="section">
 		<h1>Android Is Supported!</h1>
 		<img id="android-robot" src="img/android-robot.svg"/>
 	</div>
 
-<!-- <script src="js/app.js"></script> -->
+	<script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>
